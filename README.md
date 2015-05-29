@@ -1,11 +1,14 @@
 # docker-jenkins
 
 
-* ./docker build
+* ./build.sh
 
-* ./docker run -p 8280:8080
+* ./run.sh
+
+* later you can use *docker start myjenkins*
 
 access http://localhost:8280	
+
 
 
 from: https://github.com/jenkinsci/docker
