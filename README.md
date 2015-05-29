@@ -3,9 +3,9 @@
 
 * ./docker build
 
-* ./docker run -p 8086:8080
+* ./docker run -p 8280:8080
 
-access localhost:8086
+access http://localhost:8280	
 
 
 from: https://github.com/jenkinsci/docker
