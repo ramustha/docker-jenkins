@@ -1,2 +1,2 @@
-#!/bin/bash
-docker build -t myjenkins ../docker-jenkins
+#!/bin/sh
+docker build -t rmpestano/jenkins .

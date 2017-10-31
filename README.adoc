@@ -1,0 +1,17 @@
+= Jenkins in docker
+
+A Jenkins Docker image containing:
+
+* Declarative Pipeline support
+* Some plugins, see plugins.txt
+* Maven
+* Java
+
+== Running
+
+. ./build.sh
+. ./run.sh
+. later you can use **docker start rmpestano/jenkins**
+
+access http://localhost:8080
+
