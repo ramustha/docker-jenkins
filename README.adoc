@@ -4,14 +4,18 @@ A Jenkins Docker image containing:
 
 * Declarative Pipeline support
 * Some plugins, see plugins.txt
-* Maven
+* Maven `3.3.9`
 * Java
 
 == Running
 
 . ./build.sh
 . ./run.sh
-. later you can use **docker start rmpestano/jenkins**
+. access http://localhost:8080
+. if you exit container you can use command below to start:
++
+----
+docker start -i jenkins**
+----
 
-access http://localhost:8080
 
