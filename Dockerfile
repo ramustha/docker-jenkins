@@ -4,6 +4,15 @@ ENV JAVA_OPTS="-Xms768m -Xmx768m -Djenkins.install.runSetupWizard=false"
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
+USER root
+
+RUN apt-get update \
+      && apt-get upgrade -y \
+      && apt-get install -y sudo libltdl-dev \
+      && rm -rf /var/lib/apt/lists/*
+
+RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
+
 # Install Maven
 ENV MAVEN_VERSION 3.3.9
 ENV M2_HOME /opt/maven
