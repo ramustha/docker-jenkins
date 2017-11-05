@@ -15,7 +15,7 @@ A Jenkins Docker image containing:
 . if you exit container you can use command below to start:
 +
 ----
-docker start -i jenkins**
+docker start -i jenkins
 ----
 
 
